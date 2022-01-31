@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 
 <body>
     <div class="container">
-        <img src="logo-full.jpeg" width="250" height="250">
+        <img src="logo-full.png" width="250" height="250">
         <div>
             <script>
                 function go() {
@@ -23,20 +24,49 @@
                     if (input.value) {
                         window.location.href = '/main/' + input.value;
                     } else {
-                        alert('Please provide a link. It does not require https://.');
+                        alert('enter a link, doesnt need to have https');
                     }
                 }
             </script>
-            <span class="w3-xlarge">link here lol: </span>
+            <span class="w3-xlarge">link here : </span>
             <div>
-                <input class="w3-xlarge" type='text' placeholder='discord.com/login' id='url-target'
-                    onkeydown='if(event.key==="Enter") go()' />
+                <input class="w3-xlarge" type='text' placeholder='discord.com/login' id='url-target' onkeydown='if(event.key==="Enter") go()' />
                 <button onclick='go()' class="w3-xlarge">transport</button>
+              <head>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 9px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
             </div>
+          <div class="dropdown">
+  <span> </span>
+  <div class="dropdown-content">
+  <p> </p>
+  </div>
+</div>
             <br>
             <br>
             </p>
-            <p class="w3-medium">View GitHub source <a class="w3-medium" href="https://github.com/binary-person/womginx" target="_blank">here</a></p>
+            <p class="w3-medium">list of things known not to work <a class="w3-medium" href="https://pastebin.com/raw/gce1zA6U" target="_blank">here</a></p>
+            <p class="w3-medium">i dont collect user data bc i dont care<a></a>
         </div>
     </div>
 </body>
